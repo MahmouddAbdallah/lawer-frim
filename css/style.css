@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+:root{
+    --gray-color:#3E4355;
+    --white-color:#FFFFFF;
+    --black-color:#191A1F;
+    --gold-color:#C39167;
+    --header-color:#F5F9FA;
+    --section-2-bg:#FBFBFB;
+    --blue-color:#3E4355;
+    --slide-color:#424759;
+    --bg-input:#F5F5F5;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Public Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+.text-gold{
+    color :var(--gold-color)!important;
+}
+.text-header{
+    color :var(--header-color)!important;
+}
+.bg-header{
+    background :var(--header-color)!important;
+}
+.bg-gold{
+    background :var(--gold-color)!important;
+}
+.bg-blue{
+    background :var(--blue-color)!important;
+}
+.text-gray{
+    color :var(--gray-color)!important;
+}
+.border-none{
+    border: none!important;
+}
+.header {
+    background: var(--header-color);
+    padding: 0px 20px;
+    color: var(--gray-color) ;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar{
+    background-color: var(--header-color);
+}
+.navbar button {
+    border: none;
+    color: var(--white-color);
+}
+.logo{
+    cursor: pointer;
+}
+.logo svg{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    color: var(--gold-color) !important;
+}
+.text-logo p{
+    margin-bottom: 0px !important;
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 4px;
+    line-height: 5px;
+}
+.text-logo h6{
+    letter-spacing: 5px;
+}
+.navbar button:focus {
+    box-shadow: none;
+}
+.header .row h1{
+    font-size: 40px
+} 
+.header .req{
+    border: 2px solid var(--gold-color) !important;
+}
+.section-1{
+    color: var(--gray-color) ;
+}
+.section-1 .hero-2 .img-fluid{
+    box-shadow: var(--gray-color) -30px 40px ;
+    border: 10px var(--header-color) solid;
+    width: 90%;
+}
+.section-1 h1{
+    font-size: 40px;
+} 
+.section-1 h1 span{
+    color: var(--gold-color);
+} 
+.section-1 p{
+    font-weight: 300;
+}
+.section-1 .about-card .icon{
+    border: 2px solid var(--gold-color);
+    border-radius: 9999px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-1 .about-card .icon svg{
+    font-size: 25px;
+}
+.section-2{
+    color: var(--gray-color);
+    background: var(--section-2-bg);
+}
+.section-2 ul li::marker{
+    color: var(--gold-color);
+    font-size: large;
+}
+.section-2 .img-fluid{
+    width: 80%;
+}
+.section-3{
+    background-image:  linear-gradient(rgba(1, 1, 1, 0.788),rgba(0, 0, 0, 0.3)),url("../assets/hero.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section-3 .des {
+    color: var(--white-color);
+    opacity: 97% ;
+    font-weight:300;
+}
+.section-3 svg ,.section-5 svg{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.section-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--gray-color);
+    background: var(--section-2-bg);
+}
+.section-5 svg{
+    color: var(--gold-color);
+}
+.section-5 .hr{
+    width: 50px ;
+    height: 2px;
+    background: var(--gold-color);
+    margin: 15px 0px;
+}
+.section-5 .row .col-md-6{
+    width: fit-content;
+}
+.section-6{
+    background: var(--section-2-bg);
+    color: var(--gray-color);
+}
+.section-6 p{
+    font-weight: 300;
+}
+.section-6 .row .col-md-6 div img{
+    height: 500px;
+    object-fit: cover !important;;
+}
+.section-7{
+    color: var(--white-color);
+}
+.section-7 .bg-Img{
+    background-image: linear-gradient(#3e4355e5,#3e4355f3) ,url("../assets/Planning.jpg");
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section-7 .play{
+    width: 60px;
+    height: 60px;
+    background: var(--gold-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+.section-7 .play svg{
+    font-size: 25px;
+}
+.section-7 h6{
+    font-weight: 400;
+    opacity: 90%;
+}
+.section-7 .slider{  
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.section-7 .slider::-webkit-scrollbar {
+    display: none;
+}
+.section-7 .slider .slide{
+    background: var(--slide-color);
+    width: 220px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.section-7 .slider .slide svg{
+    font-size: 40px;
+}
+.section-7 .arrow-right{
+    right: 10px;
+    top: 45%;
+    cursor: pointer;
+    background: #b6b6a07e;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    transition-duration: 300ms;
+}
+.section-7 .arrow-left{
+    left: 5px;
+    top: 45%;
+    cursor: pointer;
+    background: #b6b6a07e;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    transition-duration: 300ms;
+}
+.section-7 .arrow-left:hover,
+.section-7 .arrow-right:hover{
+    background: var(--gold-color);
+}
+.section-8{
+    color: var(--gray-color);
+}
+.section-8 .client{
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+    border: 3px solid var(--gold-color);
+    overflow: hidden;
+}
+.section-8 .client img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-8 .des{
+    opacity: 90%;
+}
+.section-9{
+    background: var(--section-2-bg);
+    color: var(--gray-color);
+    background-image:  url("../assets/section-9 hero.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section-9 svg{
+    cursor: pointer;
+}
+.section-9 .row .col-lg-6{
+    background: var(--section-2-bg);
+}
+.section-10{
+    color: var(--gray-color) ;
+}
+.section-10 .image{
+    height: 245px;
+    overflow: hidden !important;
+}
+.section-10 .image img{
+    object-fit: cover;
+}
+.button{
+    border: 2px solid var(--gold-color) !important;
+    color: var(--gold-color) !important;
+    background: var(--section-2-bg);
+}
+.section-11{
+    background: var(--section-2-bg);
+    color: var(--gray-color);
+    background-image:  url("../assets/section-11 hero.jpg");
+    height: 108vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section-11 form input{
+    border: none;
+    background: var(--bg-input);
+}
+.section-11 form input:focus {
+    outline: none;
+}
+.section-11 form input::placeholder{
+    color: #b8b7b7;
+}
+footer .icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+footer .icon svg{
+    font-size: 25px;
+}
+footer .line{
+    width: 100%;
+    height: 2px;
+    background: #adababb5;
+}
+footer .brands{
+    cursor: pointer;
+}
+footer .brands svg{
+    width: 20px;
+    height: 20px;
+    color: var(--gold-color);
+    background: var(--white-color);
+}
+@media (min-width: 992px)
+{
+    .section-2 .row .col-lg-4 ,
+    .section-8 .row .col-md-6,
+    .section-10 .row .col-md-6,
+    .section-6 .row .col-md-6 {
+        width: 31% !important;
+    }
+    .section-3 h1 ,
+    .section-7 h1{
+        font-size: 47px  !important;
+    }
+    .section-3 .width{
+        width: 60%  !important;
+    }
+    .section-7 .slider .slide{
+        width: 290px !important;
+    }
+}
+@media (min-width: 768px)
+{
+    .section-2 .row .col-md-6,
+    .section-8 .row .col-md-6,
+    .section-10 .row .col-md-6,
+    .section-6 .row .col-md-6 {
+        width: 45% ;
+    }
+    .section-3 h1,
+    .section-7 h1 ,
+    .header .row h1{
+        font-size: 45px;
+    }
+    .section-3 .width{
+        width: 90%;
+    }
+}
